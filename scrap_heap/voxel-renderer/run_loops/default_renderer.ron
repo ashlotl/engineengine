@@ -1,0 +1,6 @@
+VoxelRendererRunLoop (
+	//don't bother including run_loop id, as it's defaulted
+	//notice how comments have indents to avoid being construed as new entries by the shitty separator system I'm using
+	some_val_1: 3,
+	some_val_2: true,
+)

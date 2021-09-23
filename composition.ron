@@ -1,0 +1,34 @@
+CompositionTemplate (
+	declarations: ScrapHeap (
+		paths: [
+			ScrapTemplate (
+				name: "voxel-renderer",
+				run_loops: [
+					RunLoopTemplate (
+						name: "default_renderer",
+						type_name: "VoxelRendererRunLoop",
+					)
+				],
+				data_objects: [
+					EngineDataTemplate (
+						name: "default_renderer_data",
+						accessors: {
+							(
+								"voxel-renderer",
+								"default_renderer",
+							) : true,
+						}
+					)
+				]
+			),
+		],
+	),
+	graph: {//key indicates (scrap_name, runloop_name), value is array of parent names
+		("voxel-renderer", "default_renderer"): [
+			("voxel-renderer", "dummy"),
+		],
+		("voxel-renderer", "dummy"): [
+			("voxel-renderer", "default_renderer"),
+		],
+	}
+)

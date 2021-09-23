@@ -1,0 +1,8 @@
+[workspace]
+
+members = [
+	"engine-entrypoint",
+	"engine-macros",
+	"engine-use",
+	"scraps/independent/ashlotl/voxel-renderer",
+]

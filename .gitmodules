@@ -1,0 +1,12 @@
+[submodule "engine-entrypoint"]
+	path = engine-entrypoint
+	url = https://github.com/ashlotl/engine-entrypoint
+[submodule "engine-macros"]
+	path = engine-macros
+	url = https://github.com/ashlotl/engine-macros
+[submodule "engine-use"]
+	path = engine-use
+	url = https://github.com/ashlotl/engine-use
+[submodule "scraps/independent/ashlotl/voxel-renderer"]
+	path = scraps/independent/ashlotl/voxel-renderer
+	url = https://github.com/ashlotl/voxel-renderer

@@ -1,0 +1,11 @@
+/home/wurst/Documents/Code/Rust/engine/target/debug/deps/cargo_metadata-b26cc1bcbcb4a757.rmeta: /home/wurst/.cargo/registry/src/github.com-1ecc6299db9ec823/cargo_metadata-0.14.0/src/lib.rs /home/wurst/.cargo/registry/src/github.com-1ecc6299db9ec823/cargo_metadata-0.14.0/src/dependency.rs /home/wurst/.cargo/registry/src/github.com-1ecc6299db9ec823/cargo_metadata-0.14.0/src/diagnostic.rs /home/wurst/.cargo/registry/src/github.com-1ecc6299db9ec823/cargo_metadata-0.14.0/src/errors.rs /home/wurst/.cargo/registry/src/github.com-1ecc6299db9ec823/cargo_metadata-0.14.0/src/messages.rs
+
+/home/wurst/Documents/Code/Rust/engine/target/debug/deps/libcargo_metadata-b26cc1bcbcb4a757.rlib: /home/wurst/.cargo/registry/src/github.com-1ecc6299db9ec823/cargo_metadata-0.14.0/src/lib.rs /home/wurst/.cargo/registry/src/github.com-1ecc6299db9ec823/cargo_metadata-0.14.0/src/dependency.rs /home/wurst/.cargo/registry/src/github.com-1ecc6299db9ec823/cargo_metadata-0.14.0/src/diagnostic.rs /home/wurst/.cargo/registry/src/github.com-1ecc6299db9ec823/cargo_metadata-0.14.0/src/errors.rs /home/wurst/.cargo/registry/src/github.com-1ecc6299db9ec823/cargo_metadata-0.14.0/src/messages.rs
+
+/home/wurst/Documents/Code/Rust/engine/target/debug/deps/cargo_metadata-b26cc1bcbcb4a757.d: /home/wurst/.cargo/registry/src/github.com-1ecc6299db9ec823/cargo_metadata-0.14.0/src/lib.rs /home/wurst/.cargo/registry/src/github.com-1ecc6299db9ec823/cargo_metadata-0.14.0/src/dependency.rs /home/wurst/.cargo/registry/src/github.com-1ecc6299db9ec823/cargo_metadata-0.14.0/src/diagnostic.rs /home/wurst/.cargo/registry/src/github.com-1ecc6299db9ec823/cargo_metadata-0.14.0/src/errors.rs /home/wurst/.cargo/registry/src/github.com-1ecc6299db9ec823/cargo_metadata-0.14.0/src/messages.rs
+
+/home/wurst/.cargo/registry/src/github.com-1ecc6299db9ec823/cargo_metadata-0.14.0/src/lib.rs:
+/home/wurst/.cargo/registry/src/github.com-1ecc6299db9ec823/cargo_metadata-0.14.0/src/dependency.rs:
+/home/wurst/.cargo/registry/src/github.com-1ecc6299db9ec823/cargo_metadata-0.14.0/src/diagnostic.rs:
+/home/wurst/.cargo/registry/src/github.com-1ecc6299db9ec823/cargo_metadata-0.14.0/src/errors.rs:
+/home/wurst/.cargo/registry/src/github.com-1ecc6299db9ec823/cargo_metadata-0.14.0/src/messages.rs:
