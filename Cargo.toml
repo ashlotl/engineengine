@@ -4,5 +4,5 @@ members = [
 	"engine-entrypoint",
 	"engine-macros",
 	"engine-use",
-	"scraps/independent/ashlotl/voxel-renderer",
+	"scraps/voxel-renderer",
 ]
