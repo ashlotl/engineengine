@@ -10,3 +10,6 @@
 [submodule "scraps/independent/ashlotl/voxel-renderer"]
 	path = scraps/independent/ashlotl/voxel-renderer
 	url = https://github.com/ashlotl/voxel-renderer
+[submodule "scraps/voxel-renderer"]
+	path = scraps/voxel-renderer
+	url = https://github.com/ashlotl/voxel-renderer
