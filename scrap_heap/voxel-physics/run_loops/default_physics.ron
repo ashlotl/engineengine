@@ -1,0 +1,8 @@
+VoxelPhysicsRunLoop (
+	some_val_1: "shrek",
+	some_val_2: [
+		false,
+		true,
+		true,
+	]
+)

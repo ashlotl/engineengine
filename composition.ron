@@ -12,6 +12,7 @@ CompositionTemplate (
 				data_objects: [
 					EngineDataTemplate (
 						name: "default_renderer_data",
+						type_name: "VoxelRendererEngineData",
 						accessors: {
 							(
 								"voxel-renderer",
@@ -21,14 +22,51 @@ CompositionTemplate (
 					)
 				]
 			),
+			ScrapTemplate (
+				name: "voxel-physics",
+				run_loops: [
+					RunLoopTemplate (
+						name: "default_physics",
+						type_name: "VoxelPhysicsRunLoop",
+					),
+				],
+				data_objects: [
+					EngineDataTemplate (
+						name: "default_physics_data",
+						type_name: "VoxelPhysicsEngineData",
+						accessors: {
+							(
+								"voxel-physics",
+								"default_physics",
+							) : true,
+						}
+					)
+				]
+			)
 		],
 	),
-	graph: {//key indicates (scrap_name, runloop_name), value is array of parent names
-		("voxel-renderer", "default_renderer"): [
-			("voxel-renderer", "dummy"),
-		],
-		("voxel-renderer", "dummy"): [
-			("voxel-renderer", "default_renderer"),
-		],
+	graph: {//key indicates (scrap_name, runloop_name, entrypoint), value is array of parent names
+		("voxel-renderer", "default_renderer"): (
+			true,//is entrypoint
+			[
+				(//parents
+					"voxel-renderer",//kind of superfluous
+					"default_renderer",
+				),
+				(
+					"voxel-physics",
+					"default_physics",
+				),
+			]
+		),
+		("voxel-physics", "default_physics"): (
+			false,//is not entrypoint
+			[
+				(//parents
+					"voxel-renderer",
+					"default_renderer"
+				),
+			]
+		),
 	}
 )

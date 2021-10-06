@@ -1,8 +1,10 @@
 [workspace]
 
 members = [
+	"engine-build",
 	"engine-entrypoint",
 	"engine-macros",
 	"engine-use",
+	"scraps/voxel-physics",
 	"scraps/voxel-renderer",
 ]

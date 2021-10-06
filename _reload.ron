@@ -1,2 +1,2 @@
-//This file is written to and managed automatically
-["voxel-renderer"]
+//This file is written to and managed automatically. Running `cargo build` on a scrap will add it here, so long as you are implementing engine-build functionality within that scrap.
+[]
