@@ -1,8 +1,7 @@
 CompositionTemplate (
-	declarations: ScrapHeap (
-		paths: [
-			ScrapTemplate (
-				name: "voxel-renderer",
+	declarations: ScrapTemplateHeap (
+		paths: {
+			"voxel-renderer": ScrapTemplate (
 				run_loops: [
 					RunLoopTemplate (
 						name: "default_renderer",
@@ -22,13 +21,16 @@ CompositionTemplate (
 					)
 				]
 			),
-			ScrapTemplate (
-				name: "voxel-physics",
+			"voxel-physics": ScrapTemplate (
 				run_loops: [
 					RunLoopTemplate (
 						name: "default_physics",
 						type_name: "VoxelPhysicsRunLoop",
 					),
+					RunLoopTemplate (
+						name: "something_else",
+						type_name: "VoxelPhysicsRunLoop",
+					)
 				],
 				data_objects: [
 					EngineDataTemplate (
@@ -39,34 +41,41 @@ CompositionTemplate (
 								"voxel-physics",
 								"default_physics",
 							) : true,
+							(
+								"voxel-physics",
+								"something_else"
+							): true,
+							(
+								"voxel-renderer",
+								"default_renderer",
+							) : false,
+							
 						}
 					)
 				]
 			)
-		],
+		},
 	),
 	graph: {//key indicates (scrap_name, runloop_name, entrypoint), value is array of parent names
 		("voxel-renderer", "default_renderer"): (
 			true,//is entrypoint
 			[
-				(//parents
-					"voxel-renderer",//kind of superfluous
-					"default_renderer",
-				),
-				(
-					"voxel-physics",
-					"default_physics",
-				),
+				("voxel-physics",	"default_physics"),
 			]
 		),
 		("voxel-physics", "default_physics"): (
 			false,//is not entrypoint
-			[
-				(//parents
-					"voxel-renderer",
-					"default_renderer"
-				),
+			[//parents
+				("voxel-renderer",	"default_renderer"),
+				("voxel-physics",		"something_else"),
 			]
 		),
+		("voxel-physics", "something_else"): (
+			true,
+			[
+				("voxel-physics",	"default_physics"),
+				("voxel-renderer",	"default_renderer"),
+			]
+		)
 	}
 )

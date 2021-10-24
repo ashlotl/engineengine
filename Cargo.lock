@@ -100,6 +100,7 @@ version = "0.1.0"
 dependencies = [
  "crossbeam-channel",
  "libloading",
+ "mopa",
  "parking_lot",
  "ron",
  "serde",
@@ -150,6 +151,12 @@ checksum = "712a4d093c9976e24e7dbca41db895dabcbac38eb5f4045393d17a95bdfb1109"
 dependencies = [
  "scopeguard",
 ]
+
+[[package]]
+name = "mopa"
+version = "0.2.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a785740271256c230f57462d3b83e52f998433a7062fc18f96d5999474a9f915"
 
 [[package]]
 name = "parking_lot"
@@ -296,6 +303,7 @@ dependencies = [
  "engine-build",
  "engine-macros",
  "engine-use",
+ "parking_lot",
  "ron",
  "serde",
 ]
@@ -307,8 +315,10 @@ dependencies = [
  "engine-build",
  "engine-macros",
  "engine-use",
+ "parking_lot",
  "ron",
  "serde",
+ "voxel-physics",
 ]
 
 [[package]]
