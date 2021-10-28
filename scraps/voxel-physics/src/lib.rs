@@ -5,9 +5,9 @@ use engine_macros::{glue_enginedata, glue_runloop};
 use engine_use::{
 	concurrency::{self, get_enginedata_object},
 	data::{
-		graph::GraphData,
 		object::engine_data::{EngineData, EngineDataObjectLookupResult},
 		run::run_loop::RunLoop,
+		runtime::graph::GraphData,
 	},
 };
 
@@ -35,7 +35,7 @@ pub struct VoxelPhysicsRunLoop {
 glue_runloop!(VoxelPhysicsRunLoop);
 
 impl RunLoop for VoxelPhysicsRunLoop {
-	fn run(self: Box<Self>, graph_data: Arc<GraphData>, scrap_id: String, run_loop_id: String) {
+	fn run(self: Box<Self>, graph_data: Arc<GraphData>, scrap_id: &str, run_loop_id: &str) {
 		println!("VoxelPhysicsRunLoop {}/{} entered!", scrap_id, run_loop_id);
 		//one-time setup
 		let engine_data = get_enginedata_object::<VoxelPhysicsEngineData>(graph_data.clone(), &scrap_id, &run_loop_id, &"voxel-physics".to_owned(), &"default_physics_data".to_owned());
