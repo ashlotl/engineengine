@@ -1,4 +1,4 @@
-# This project is deprecated. Please see [OmniCustard](github.com/ashlotl/omni-custard)
+# This project is deprecated. Please see [OmniCustard](https://github.com/ashlotl/omni-custard)
 
 # Engine Engine
 _This is the repository for engineengine development. To make your own engineengine project, see tutorials (_ link pending _)._
